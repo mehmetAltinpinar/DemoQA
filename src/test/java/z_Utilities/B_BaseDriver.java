@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class BaseDriver {
+public class B_BaseDriver {
 
     public static WebDriver driver;
     public static WebDriverWait wait;
@@ -31,7 +31,7 @@ public class BaseDriver {
         driver = new ChromeDriver(opt);
         driver.manage().window().maximize();  // Ekranı max yapıyor.
 
-        wait = new WebDriverWait(BaseDriver.driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(B_BaseDriver.driver, Duration.ofSeconds(10));
 
     }
 

@@ -3,14 +3,14 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import z_Utilities.BaseDriver;
+import z_Utilities.B_BaseDriver;
 import z_Utilities.Tools;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.List;
 
-public class BurakClass extends BaseDriver {
+public class BurakClass extends B_BaseDriver {
 
     SoftAssert softAssert;
 
