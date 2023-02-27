@@ -10,7 +10,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.List;
 
-public class BurakClass extends B_BaseDriver {
+public class Selectable_Button extends B_BaseDriver {
 
     SoftAssert softAssert;
 
