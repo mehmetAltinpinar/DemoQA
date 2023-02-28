@@ -35,8 +35,8 @@ public class Selectable_Button extends B_BaseDriver {
 
         rbt.keyPress(KeyEvent.VK_CONTROL);
         for (int i = 0; i < items.size()-1; i++){
-            //ts.elementToBeVisible(); needs to be checked why it is not working...
             items.get(i).click();
+            ts.elementToBeVisible(items.get(i));
             Assert.assertEquals(items.get(i).getCssValue("background-color"),"rgba(0, 123, 255, 1)");
         }
         rbt.keyRelease(KeyEvent.VK_CONTROL);
