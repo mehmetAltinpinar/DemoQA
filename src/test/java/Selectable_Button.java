@@ -17,7 +17,7 @@ public class Selectable_Button extends B_BaseDriver {
     Tools ts = new Tools();
     Robot rbt;
     List<WebElement> items;
-    @Test()
+    @Test(priority = 0)
     void validateTheWorkingOfSelectableFunctionality(){
         driver.get("https://demoqa.com/selectable/");
 
