@@ -31,9 +31,11 @@ public class DatePicker extends Tools {
         dateInput.sendKeys(Keys.DELETE);
         dateInput.sendKeys("12/21/2019");
 
-//        WebElement highlightedDate = driver.findElement(By.xpath("//*[@id=\"datePickerMonthYear\"]/div[2]/div[2]/div/div/div[2]/div[2]/div[3]/div[7]"));
-//        System.out.println(highlightedDate.getText());
-//        String expected = "21/12/2019";
+
+        WebElement date = driver.findElement(By.id("datePickerMonthYearInput"));
+        String actual = date.getAttribute("value");
+        String expected = "21/12/2019";
+        Assert.assertEquals(actual,expected, "Test validate 12/21/2019 fails");
     }
 
     @Test
@@ -45,5 +47,10 @@ public class DatePicker extends Tools {
         dateInput.sendKeys(selectAll);
         dateInput.sendKeys(Keys.DELETE);
         dateInput.sendKeys("01/14/0030");
+
+        WebElement date = driver.findElement(By.id("datePickerMonthYearInput"));
+        String actual = date.getAttribute("value");
+        String expected = "21/12/2030";
+        Assert.assertEquals(actual,expected, "Test validate 01/14/0030 fails");
     }
 }
