@@ -21,7 +21,6 @@ public class Menu extends Utilities {
     After hover over the elements you should see the color change and other elements appeared.
      */
 
-
     @Test
     void loginTest() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
@@ -53,7 +52,6 @@ public class Menu extends Utilities {
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl.contains("Sub Sub Item 1"));
-
 
     }
 }
